@@ -12,9 +12,8 @@
     		node [fontsize=10 fontname="Helvetica" penwidth=0.6]
     		edge [penwidth=0.6 color="#eeeeee"]
 
-			<xsl:apply-templates/>
-
-			<xsl:call-template name="строить-связи"/>
+    		<xsl:apply-templates/>
+    		<xsl:call-template name="строить-связи"/>
 		}
 	</xsl:template>
 

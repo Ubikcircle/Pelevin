@@ -15,9 +15,9 @@ function array2xml(array $array, $defaultNodes = array(), $indent = '  ', $depth
 {
 	foreach ($array as $k => $v) {
 		if (true == is_numeric($k))
-				$name = $defaultNodes[0];
+			$name = $defaultNodes[0];
 		else
-				$name = $k;
+			$name = $k;
 
 		if (true == is_array($v)) {
 			$v = array2xml(
