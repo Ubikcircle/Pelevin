@@ -46,7 +46,7 @@
       <xsl:for-each select="//связь[text() = current()/название]/../..">
         "<xsl:value-of select="$название"/>" -- "<xsl:value-of select="название"/>"
 
-         <xsl:if test="статус = 'гипотеза'">[pendwidth=0.1 color="#555555"]; "<xsl:value-of select="название"/>" [style=dotted];</xsl:if>
+         <xsl:if test="статус = 'гипотеза'">[pendwidth=0.1 color="#555555"]; "<xsl:value-of select="название"/>" [penwidth=0.1 style=""];</xsl:if>
       </xsl:for-each>
     </xsl:for-each>
   </xsl:template>
