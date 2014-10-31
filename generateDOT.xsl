@@ -3,8 +3,8 @@
   <xsl:output method="text" indent="no"/>
 
   <xsl:template match="пелевин">
-    graph {
-      overlap=voronoi
+    strict graph {
+      overlap=prism
       splines=true
 
       bgcolor="#1f1f1f"
