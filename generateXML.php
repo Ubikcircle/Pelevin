@@ -41,9 +41,6 @@ function array2xml(array $array, $defaultNodes = array(), $indent = '  ', $depth
 
 function checkIntegrity($books, $links)
 {
-	if (false == is_array($books) || false == is_array($links))
-		exit(1);
-
 	foreach ($books['произведения'] as $book)
 		@$bookList[$book['название']]++;
 
