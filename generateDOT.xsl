@@ -23,6 +23,8 @@
 
       <xsl:for-each select="сущность">
         "<xsl:value-of select="название"/>"
+
+        <xsl:if test="примечание = 'новое'">[color="#78c60e"]</xsl:if>
       </xsl:for-each>
     }
   </xsl:template>
@@ -42,11 +44,19 @@
   <xsl:template name="строить-связи">
     <xsl:for-each select="//произведения/сущность">
       <xsl:variable name="название"><xsl:value-of select="название"/></xsl:variable>
+      <xsl:variable name="примечание"><xsl:value-of select="примечание"/></xsl:variable>
 
       <xsl:for-each select="//связь[text() = current()/название]/../..">
         "<xsl:value-of select="$название"/>" -- "<xsl:value-of select="название"/>"
 
-         <xsl:if test="статус = 'гипотеза'">[pendwidth=0.1 color="#555555"]; "<xsl:value-of select="название"/>" [penwidth=0.1 style=""];</xsl:if>
+        <xsl:if test="статус = 'гипотеза'">
+          [pendwidth=0.1 color="#555555"]; "<xsl:value-of select="название"/>" [penwidth=0.1 style=""];
+        </xsl:if>
+
+        <xsl:if test="примечание = 'новое' and $примечание = 'новое'">
+          "<xsl:value-of select="$название"/>" -- "<xsl:value-of select="название"/>"
+          [pendwidth=0.1 color="#78c60e"]; "<xsl:value-of select="название"/>" [color="#78c60e"];
+        </xsl:if>
       </xsl:for-each>
     </xsl:for-each>
   </xsl:template>
