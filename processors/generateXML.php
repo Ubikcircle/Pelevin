@@ -1,6 +1,6 @@
 <?php
-$books = yaml_parse_file('connections.yaml', 0);
-$links = yaml_parse_file('connections.yaml', 1);
+$books = yaml_parse_file($argv[1], 0);
+$links = yaml_parse_file($argv[1], 1);
 
 checkIntegrity($books, $links);
 
