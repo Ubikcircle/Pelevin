@@ -1,6 +1,6 @@
 OUTPUT?=./schemas/
 SOURCE?=$(wildcard connections/*.yaml)
-STYLE?=dark
+STYLE?=ambient
 
 DPROC?=neato
 XPROC?=xsltproc --stringparam stylesheet $(STYLE) processors/generateDOT.xsl -
