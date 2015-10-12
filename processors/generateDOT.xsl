@@ -17,7 +17,7 @@
 
   <xsl:variable name="style" select="document($stylesheetName)/стиль"/>
 
-  <xsl:template match="пелевин">
+  <xsl:template match="/">
     strict graph {
       overlap="<xsl:value-of select="$style/общий/сжатие"/>"
       splines="true"

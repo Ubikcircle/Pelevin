@@ -7,7 +7,7 @@ checkIntegrity($books, $links);
 $tags = array('сущность', 'связь');
 
 print array2xml(
-	array('пелевин' => sprintf("\n%s%s", array2xml($books, $tags), array2xml($links, $tags))),
+	array('data' => sprintf("\n%s%s", array2xml($books, $tags), array2xml($links, $tags))),
 	array(), null
 );
 
