@@ -57,7 +57,7 @@
           <xsl:value-of select="название"/>
 
           <xsl:choose>
-            <xsl:when test="'true' = string($style/связи/произведения/информация/жанр) and 'true' = string($style/связи/произведения/информация/публикация)">
+            <xsl:when test="'true' = string($style/произведения/информация/жанр) and 'true' = string($style/произведения/информация/публикация)">
               \n(<xsl:value-of select="жанр"/>, <xsl:value-of select="публикация"/>)
             </xsl:when>
             <xsl:when test="'true' = string($style/связи/произведения/информация/публикация)">
@@ -101,6 +101,7 @@
             style="<xsl:value-of select="$style/связи/явления/стиль"/>"
             color="<xsl:value-of select="$style/связи/явления/цвет"/>"
             fontcolor="<xsl:value-of select="$style/связи/явления/шрифт/цвет"/>"
+            fillcolor="<xsl:value-of select="$style/связи/явления/заливка"/>"
           ]
         </xsl:if>
       </xsl:for-each>
