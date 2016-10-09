@@ -2,7 +2,7 @@ OUTPUT?=./schemas/
 SOURCE?=$(wildcard connections/*.yaml)
 STYLE?=ambient
 
-DPROC?=neato
+DPROC?=sfdp
 XPROC?=xsltproc --stringparam stylesheet $(STYLE) processors/generateDOT.xsl -
 YPROC?=php -f processors/generateXML.php
 
