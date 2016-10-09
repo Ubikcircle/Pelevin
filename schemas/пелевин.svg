@@ -113,7 +113,7 @@
 </g>
 <!-- Принц Госплана -->
 <g id="node7" class="node"><title>Принц Госплана</title>
-<polygon fill="#b6b6f9" stroke="#b6b6f9" stroke-width="0.3" points="96,-866.986 8.52651e-14,-866.986 8.52651e-14,-830.986 96,-830.986 96,-866.986"/>
+<polygon fill="#b6b6f9" stroke="#b6b6f9" stroke-width="0.3" points="96,-866.986 -4.26326e-14,-866.986 -4.26326e-14,-830.986 96,-830.986 96,-866.986"/>
 <text text-anchor="middle" x="48" y="-851.986" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#07093d">Принц Госплана </text>
 <text text-anchor="middle" x="48" y="-840.986" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#07093d">(повесть, 1991)</text>
 </g>
@@ -859,7 +859,7 @@
 </g>
 <!-- Тхаги -->
 <g id="node31" class="node"><title>Тхаги</title>
-<polygon fill="#b6b6f9" stroke="#b6b6f9" stroke-width="0.3" points="1234.66,-36 1147.66,-36 1147.66,-0 1234.66,-0 1234.66,-36"/>
+<polygon fill="#b6b6f9" stroke="#b6b6f9" stroke-width="0.3" points="1234.66,-36 1147.66,-36 1147.66,1.27898e-13 1234.66,1.27898e-13 1234.66,-36"/>
 <text text-anchor="middle" x="1191.16" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#07093d">Тхаги </text>
 <text text-anchor="middle" x="1191.16" y="-10" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#07093d">(рассказ, 2010)</text>
 </g>
